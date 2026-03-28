@@ -6,6 +6,7 @@ import Model from "./components/Models/Models";
 import NavBar from "./components/Navbar/Navbar";
 import Cart from "./components/Cart/Cart";
 import Tabs from "./components/Tabs/Tabs";
+import { ToastContainer, toast } from "react-toastify";
 
 const fetchModels = async () => {
   const url = "/models.json";
@@ -24,6 +25,12 @@ function App() {
     const exists = cart.find((c) => c.id === model.id);
     if (!exists) {
       setCart([...cart, model]);
+      toast.success(`${model.title} added successfully`, {
+        position: "top-center",
+        autoClose: 2000,
+      });
+    } else {
+      toast.error(`${model.title} already in the cart`);
     }
   };
   return (
@@ -40,9 +47,10 @@ function App() {
         ></Model>
       )}
 
-      {tab === "Cart" && <Cart carts={cart}></Cart>}
+      {tab === "Cart" && <Cart carts={cart} setCart={setCart}></Cart>}
 
       <Footer></Footer>
+      <ToastContainer />
     </>
   );
 }

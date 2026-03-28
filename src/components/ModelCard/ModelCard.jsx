@@ -25,8 +25,7 @@ const ModelCard = ({ model, cart, setCart, handleCart }) => {
         <div>
           <button
             onClick={handleSubscribeButton}
-            className={`btn ${!subscribe ? "btn-warning" : "btn-success"} btn-block font-bold`}
-            disabled={subscribe}
+            className={`btn ${!subscribe ? "bg-[#e8000c] " : "btn-success"} btn-block font-bold text-white`}
           >
             {subscribe ? "Subscribed" : "Subscribe Now"}
           </button>

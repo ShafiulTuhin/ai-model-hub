@@ -1,9 +1,15 @@
 import "./App.css";
+import Banner from "./components/Banner/Banner";
+import Footer from "./components/Footer/Footer";
+import Model from "./components/Models/Model";
+import NavBar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <>
-      <h2 className="bg-blue-300"> Hello</h2>
+      <NavBar></NavBar>
+      <Banner></Banner>
+      <Footer></Footer>
     </>
   );
 }

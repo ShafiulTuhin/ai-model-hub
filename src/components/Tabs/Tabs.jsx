@@ -1,4 +1,6 @@
-const Tabs = ({ tab, setTab }) => {
+const Tabs = ({ tab, setTab, carts }) => {
+  console.log(carts.length);
+
   return (
     <div
       role="tablist"
@@ -15,7 +17,7 @@ const Tabs = ({ tab, setTab }) => {
         onClick={() => setTab("Cart")}
         className={`btn ${tab === "Cart" ? " btn-warning" : ""}`}
       >
-        Cart
+        Cart({carts.length})
       </button>
     </div>
   );

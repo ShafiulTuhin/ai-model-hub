@@ -37,7 +37,7 @@ function App() {
     <>
       <NavBar></NavBar>
       <Banner></Banner>
-      <Tabs tab={tab} setTab={setTab}></Tabs>
+      <Tabs tab={tab} setTab={setTab} carts={cart}></Tabs>
       {tab === "Models" && (
         <Model
           modelsPromise={modelsPromise}

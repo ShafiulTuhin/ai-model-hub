@@ -10,7 +10,7 @@ const ModelCard = ({ model, cart, setCart, handleCart }) => {
 
   const [subscribe, setSubscribe] = useState(false);
   return (
-    <div className="card bg-slate-200 shadow-sm mt-5">
+    <div className="card bg-slate-200 shadow-sm mt-8">
       <div className="card-body">
         <span className={`badge badge-xs p-3 font-bold bg-warning`}>
           {status}

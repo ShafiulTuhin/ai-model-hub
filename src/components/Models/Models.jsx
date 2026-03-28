@@ -6,7 +6,7 @@ const Model = ({ modelsPromise, cart, setCart, handleCart }) => {
 
   return (
     <div className="mb-10 px-4 lg:px-0">
-      <h2 className="text-center font-bold md:text-3xl text-2xl">
+      <h2 className="text-center font-bold md:text-3xl text-2xl mb-5">
         Choose Your AI Model
       </h2>
       <p className="text-center font-medium text-[#797979]">

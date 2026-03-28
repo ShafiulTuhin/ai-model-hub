@@ -1,7 +1,7 @@
 import BannerImg from "../../assets/banner.png";
 const Banner = () => {
   return (
-    <div className="relative min-h-162.5 lg:px-0 px-4 flex items-center overflow-hidden">
+    <div className="relative min-h-162.5 lg:px-0 px-4 flex items-center overflow-hidden  md:py-0 py-10">
       <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center relative z-10">
         {/* Left Content */}
         <div className="space-y-4">
